@@ -1,0 +1,599 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* SAMPLE */
+.sample_main_container{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sample_container{
+    border: 1px solid green;
+    background-color: green;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+
+/* NAVIGATION BAR DESIGN */
+
+
+
+.navbar_heading{
+    font-family: "Rajdhani";
+    font-weight: bolder;
+    font-size: 30px;
+    margin: 20px;
+}
+
+.navbar_button:hover{
+    cursor: pointer;
+}
+
+.navbar_button{
+    color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;  
+    font-family: "Quicksand";
+    font-size: 1.1vw;
+    font-weight: 500;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+.navbar_button:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #000000;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+.navbar_button:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+
+  
+.sidebar_button:hover{
+    cursor: pointer;
+}
+
+.sidebar_button{
+    color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;  
+    font-family: "Roboto Slab";
+    font-size:20px;
+    font-weight: 500;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+.sidebar_button:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #000000;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+.sidebar_button:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+
+
+  
+
+
+
+
+
+
+
+/* PROFILE DESIGN */
+.profile_main_container{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 90vh;
+    width: 100%;
+}
+
+.profile_info_container{
+    height: fit-content;
+    width: 60%;
+    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.profile_image_container{
+    height:40vw;
+    width: 30vw;
+    margin: 20px;
+}
+
+.profile_image{
+    height:100%;
+    width: 100%;
+}
+
+
+.profile_heading{
+    font-family: "Roboto Slab";
+    font-size:5vw;
+    font-weight: bolder;
+    width:80%;
+    opacity: 1;
+}
+
+.profile_subheading{
+    font-size: 20px;   
+}
+
+.profile_description{
+    font-family:"roboto";
+    color: gray;
+    font-size: 100%;    
+    font-size:20px;
+    width: 80%;
+}
+
+.profile_info_subcontainer{
+
+    margin: 10px;
+    /* width: 100%; */
+}
+
+.profile_description{
+    width: 80%;
+}
+
+/* CSS */
+.button-71 {
+  background-color: #0078d0;
+  border: 0;
+  border-radius: 56px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  outline: 0;
+  padding: 16px 21px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-71:before {
+  background-color: initial;
+  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+  border-radius: 125px;
+  content: "";
+  height: 50%;
+  left: 4%;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  transition: all .3s;
+  width: 92%;
+}
+
+.button-71:hover {
+  box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  .button-71 {
+    padding: 16px 48px;
+  }
+}
+
+.button-6:hover,
+.button-6:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.button-6:hover {
+  transform: translateY(-1px);
+}
+
+.button-6:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+
+/* 
+.profile_bgimage{
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+} */
+
+
+
+
+
+
+
+/* ABOUT DESIGN */
+
+
+.about{
+  height:fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 250, 232);
+}
+
+.about_main_container{
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.about_container{
+  width: 600px;
+  height: fit-content;
+  text-align: center;
+}
+
+.about_heading_container{
+  font-family: 'Roboto Slab';
+  font-size: 70px;  
+  margin: 20px;
+  margin-bottom: 200px;
+}
+
+
+
+.about_description_container{
+  font-family: 'Roboto';
+  font-style: italic;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  justify-content: space-between;
+  padding: 20px;
+  color: rgb(76, 69, 69);
+}
+
+/* CSS */
+.button-28 {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 200px;
+  will-change: transform;
+}
+
+.button-28:disabled {
+  pointer-events: none;
+}
+
+.button-28:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+
+
+
+
+
+
+/* CLIENTS DESING */
+
+
+.clients_main_container{
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.client_heading{
+  font-family: 'Roboto';
+  font-size: 50px;
+  font-weight: bolder;
+  color: rgb(184, 156, 72);
+  margin: 40px;
+}
+
+.client_card{
+  /* width: 100px;
+  height: 300px; */
+  width: 200px;
+  height: fit-content;
+  border-radius: 10px;
+  padding: 10px;
+  
+  margin: 30px;
+  border: 2px solid grey;
+}
+
+.client_card > div{
+  width: 100%;
+  height: 100%;
+}
+.client_image:hover{
+  cursor: pointer;
+}
+
+.client_image{
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+.client_description{
+  text-align: center;
+  font-family: 'roboto';
+}
+
+.clients_card_container{
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+
+/* CONTACT DESIGN */
+
+
+.contact_main_container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color:rgb(255, 250, 232);
+}
+
+.contact_image_container{
+  padding: 10px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact_image{
+  border:5px solid rgb(255, 145, 0);
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  padding:10px;
+}
+
+.contact_description1{
+  font-family:'Roboto';
+  text-align: center;
+  color: grey;
+}
+
+
+.contact_icon_container{
+  width: 100%;
+}
+
+
+.contact_icons{
+  width:140px;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  /* border:2px solid rgb(255, 0, 0); */
+}
+.contact_icon_container{
+  display: flex;
+  justify-content: space-evenly;
+  flex-shrink: inherit;
+  flex-wrap: wrap;
+}
+
+.contact_icon{
+  height: fit-content;
+  width: fit-content;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.contact_icon:hover{
+  cursor: pointer;
+  background-color: rgb(236, 212, 138);
+}
+
+.contact_icon_description{
+  font-family: 'roboto';
+  text-align: center;
+  font-size: 1vw;
+}
+
+
+.contact_description2{
+  font-size: 20px;
+  font-family: 'Roboto';
+}
+
+
+
+/* FOOTER DESIGN */
+
+
+.footer{
+  width: 100%;
+}
+
+.footerMainDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 60vh;
+}
+
+
+.footerListContainer{
+  display: flex;
+  width: 60vw;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footerSubSubContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+h3{
+  font-family: 'Roboto';
+  font-size: 25px;
+}
+
+.footerSubSubContainer > a{
+  font-family: 'Roboto';
+  text-decoration: none;
+  color: black;
+  margin:3px;
+}
+
+
+.footerInfoContainer{
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Roboto';
+}
+
+.footerHeading{
+  font-size: 30px;
+  font-weight: bolder;
+}   
+
+.footerDescription{
+  width: 50vw;
+}
+
+.footerIcons{
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+  align-items: center;
+  flex-shrink: inherit;
+}
+
+
+.footerIconsSubContainer{
+  padding:15px;
+}
+
+.footerIconsSubContainer:hover{
+  background-color: #d4d4f4;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+
+.footerSubContainer{
+  font-family: 'Roboto';
+}
+
+
+.footerDescription{
+  width: 100%;
+}

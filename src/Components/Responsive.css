@@ -1,0 +1,58 @@
+@media only screen and (max-width: 600px) {
+    .footerIcons{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .contact_icon_description{
+        font-size: 2vw;
+    }
+}
+@media only screen and (max-width: 800px) {
+
+    .profile_heading{
+        font-size: 200%;
+    }
+
+        
+    .profile_info_container{
+        text-align: center;
+    }
+    
+
+    .about_heading_container{
+        font-size: 40px;
+        margin: 0px;
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    
+.about_description_container{
+    font-size: 20px;
+    align-items: center;
+    margin-bottom: 300px;
+    text-align: center;
+}
+    
+.navbar_heading{
+    font-size: 22px;
+}
+
+    .profile_description{
+        font-size: 70%;
+    }
+
+    .profile_info_container{
+        align-items: center;
+        width: 100%;
+        margin: 0px;
+        height: fit-content;
+    }
+
+    .profile_image_container{
+        height: 40%;
+        width: 50%;
+    }
+
+}
